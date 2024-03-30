@@ -1,17 +1,13 @@
 import { Component } from "react";
 import "./NavbarStyles.css";
 import { Link } from "react-router-dom";
-import { MenuItems } from "./MenuItem";
+import { MenuItems } from "./MenuItems";
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
         <h1 className="navbar-logo"> Pete's Pantry</h1>
-        <div className="menu-icons">
-          <i className="fa-solid fa-bars"></i>
-          <i className="fa-solid fa-times"></i>
-        </div>
         <ul className="nav-menu">
           {MenuItems.map((item, index) => {
             return (
@@ -23,6 +19,7 @@ class Navbar extends Component {
               </li>
             );
           })}
+          <button>Sign Up</button>
         </ul>
       </nav>
     );
