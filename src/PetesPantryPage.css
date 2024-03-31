@@ -1,0 +1,43 @@
+.pantry-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .category-tile {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .category-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: for rounded corners */
+    transition: transform 0.3s ease;
+  }
+  
+  .category-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .category-details {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
+  .category-tile:hover .category-details {
+    display: flex;
+  }
+  

@@ -1,19 +1,22 @@
 .home-container {
     display: flex;
+    flex-direction:column ;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between tiles as needed */
-    margin-top: 20px;
+    gap: 30px; /* Adjust the gap between tiles as needed */
+    margin-top: 30px;
   }
+  
   
   .tile {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px; /* Adjust the size as needed */
-    height: 400px; /* Adjust the size as needed */
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
     background-color: #FE5C00; /* Light grey background */
     text-decoration: none; /* Remove link underlining */
     color: black; /* Text color */
+    text-size-adjust: 10;
     border-radius: 10px; /* Optional: Rounded corners */
     transition: transform 0.2s; /* Smooth hover effect */
   }
@@ -24,9 +27,26 @@
   
   .tile-pantry {
     /* Specific styles for the Pete's Pantry tile */
+    background-image: url('https://bloximages.newyork1.vip.townnews.com/ocolly.com/content/tncms/assets/v3/editorial/7/11/7110499e-d10c-11ee-a562-3bf22e90a6a7/65d67f9a2c6b3.image.jpg?resize=333%2C500');
+    background-size: cover;
+    background-position: center;
   }
   
   .tile-eats {
     /* Specific styles for the Pete's Eats tile */
+    background-image: url('C:\Users\chiru\petespantry\public\peteseatslogo.jpeg');
+  background-size: cover;
+  background-position: center;
+  } 
+  .alignr{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
   }
+  .alignl{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   
