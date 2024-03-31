@@ -1,6 +1,5 @@
 import pandas as pd
 
-# Function from backend.py to load data for Pete's Pantry
 def load_data(excel_path):
     """
     Load and process the Excel file, organizing data into a dictionary
@@ -20,6 +19,7 @@ def load_data(excel_path):
     return data
 
 # Function from backend.py to get the nutrition image path for Pete's Pantry
+# Change the paths
 def get_nutrition_image_path(category, base_path="D:\\hackthon\\nutrition"):
     """
     Generate the path to the nutrition facts PNG based on the category.
@@ -31,7 +31,6 @@ def get_nutrition_image_path(category, base_path="D:\\hackthon\\nutrition"):
     filename = category.replace(" ", "_").lower() + ".png"
     return f"{base_path}\\{filename}"
 
-# Functions from backend2.py for Pete'seat token generation and validation
 def validate_student_id(student_id):
     """
     Validate the student ID format.

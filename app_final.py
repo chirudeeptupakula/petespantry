@@ -24,7 +24,7 @@ st.title("Welcome to Pete's Platforms")
 # Display logos for selection
 col1, col2 = st.columns(2)
 
-# Load and resize logos
+# Change the paths of the logos
 pantry_logo = Image.open("D:\\hackthon\\Pete'sPantry_logo.jpg").resize((450, 450))
 eat_logo = Image.open("D:\\hackthon\\peteseat_logo.jpg").resize((450, 450))
 
@@ -43,7 +43,7 @@ with col2:
 # Pete's Pantry UI
 if st.session_state.show_pantry:
     # Logic from app.py
-    data = load_data("D:\\hackthon\\Pete_pantary.xlsx")
+    data = load_data("D:\\hackthon\\Pete_pantary.xlsx") # Change the path of the excel sheet here.
     st.header("Pete's Pantry")
     category = st.selectbox("Select a Category", options=[""] + list(data.keys()), index=0)
     if category:
@@ -60,7 +60,7 @@ if st.session_state.show_pantry:
 # Pete'seat UI
 if st.session_state.show_eat:
     # Logic from app2.py
-    tokens_generated = set()  # You'll need to decide on persistence of this set based on your application's needs
+    tokens_generated = set()
     st.header("PetesEats Token Generator")
     student_id = st.text_input("Student ID", "")
     mail_id = st.text_input("Mail ID", "")
